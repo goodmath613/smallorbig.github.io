@@ -1,6 +1,8 @@
 # R 및 RStudio 설치 #
 
-작성 날짜 : 2019. 05. 04.
+Updated : 2019. 05. 04.
+
+---
 
 ## R ##
 
@@ -92,7 +94,7 @@ RStudio에서 지원하는 웹사이트라는 설명이 있어 왠지 믿음이 
   (파일명 : `RStudio-1.2.1335.exe`)
 
   <img src="HowToInstall/RS03.png" width=80%>
-  
+
 ### RStudio 설치 ###
 
 기본값을 기준으로 설치합니다.
