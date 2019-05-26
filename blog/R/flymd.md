@@ -11,7 +11,7 @@ Updated : 2019년 5월 26일
 
 ![](Chicken/images/scr.png)
 
-- Script 창에 코드입력
+- Script 창에 코드입력fLyMd-mAkEr
 - Script 창에서 코드 실행 (Ctrl + Enter)
 - Console 창에서 명령어 실행
 - Environment 창에서 변수 확인
@@ -271,7 +271,7 @@ head(korea)
 
 ```r
 gj <- korea[grepl("^2641", korea$EMD_CD), ]
-fLyMd-mAkEr
+
 plot(gj)    # 쉽게 그릴 수 있지만 다양한 옵션을 주기 어렵습니다.
 
 ggplot(gj,

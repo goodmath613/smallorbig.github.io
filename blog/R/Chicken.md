@@ -11,7 +11,7 @@ Updated : 2019년 5월 26일
 
 ![](Chicken/images/scr.png)
 
-- Script 창에 코드입력
+- Script 창에 코드입력
 - Script 창에서 코드 실행 (Ctrl + Enter)
 - Console 창에서 명령어 실행
 - Environment 창에서 변수 확인
