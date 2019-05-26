@@ -271,7 +271,7 @@ head(korea)
 
 ```r
 gj <- korea[grepl("^2641", korea$EMD_CD), ]
-
+fLyMd-mAkEr
 plot(gj)    # 쉽게 그릴 수 있지만 다양한 옵션을 주기 어렵습니다.
 
 ggplot(gj,
