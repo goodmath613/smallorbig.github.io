@@ -11,9 +11,9 @@ Updated : 2019년 5월 26일
 
 ![](Chicken/images/scr.png)
 
-- Script 창에 코드입력fLyMd-mAkEr
+- Script 창에 코드입력
 - Script 창에서 코드 실행 (Ctrl + Enter)
-- Console 창에서 명령어 실행
+- Console 창에서 명령어 실행fLyMd-mAkEr
 - Environment 창에서 변수 확인
 - Etc. 창에서 파일 및 폴더, Ploting 이미지 등 확인
 
