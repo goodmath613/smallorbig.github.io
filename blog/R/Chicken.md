@@ -254,17 +254,16 @@ korea <- readOGR(file_name, stringsAsFactors=F)
 head(korea)
 ```
 
-형태가 복잡합니다. 좀 더 이해하기 쉬운 형태로 다루기 위해서 아래 코드를 입력합니다.
-
+형태가 복잡합니다. 아래 코드를 입력하면 데이트프레임 형태로 정보를 확인할 수 있습니다.
 ```r
 head(korea@data)
 
-install.packages("raster")
-library(raster)
+head(korea$EMD_CD)
 
-head(korea)
+head(korea$EMD_ENG_NM)
+
+head(korea$EMD_KOR_NM)
 ```
-한층 보기 쉬워졌습니다. 하지만 실제로 자료 구조가 바뀌진 않았다는 사실을 상기해주세요.
 
 열 이름을 확인해보면  EMD_CD(읍면동 코드),  EMD_ENG_NM(읍면동 영어 이름), EMD_KOR_NM(읍면동 한글 이름)으로 이루어져 있습니다. 이중에서 읍면동 코드 중 `26`으로 시작하는 번호가 부산이고, `2641`로 시작하는 부분은 금정구 입니다.
 우리는 `2641`로 시작하는 코드를 갖는 행을 `gj`라고 할당하여 이미지를 그려보겠습니다.
@@ -276,9 +275,9 @@ plot(gj)    # 쉽게 그릴 수 있지만 다양한 옵션을 주기 어렵습�
 
 ggplot(gj,
   aes(x = long, y = lat)) +
-  geom_polygon(group = group),
-    color = "black",
-    fill = "white")
+  geom_polygon(aes(group = group),
+        color = "black",
+        fill = "white")
 ```
 
 경도(longitude), 위도(latitude)의 숫자 지도를 표현하는 방식에 따라 차이가 있습니다. 다음 코드를 실행해서 익숙한 경위도 단위로 바꿔봅니다.
@@ -292,9 +291,9 @@ gj <- spTransform(gj,
 
 ggplot(gj,
   aes(x = long, y = lat)) +
-  geom_polygon(group = group),
-    color = "black",
-    fill = "white")
+  geom_polygon(aes(group = group),
+        color = "black",
+        fill = "white")
 ```
 <!--
 혹시 궁금하신 분들은 R에서 경위도 단위 변환에 대해서 작성한 다음 블로그 글을 참고해도 좋겠습니다.
@@ -302,6 +301,7 @@ ggplot(gj,
 - URL : <https://lovetoken.github.io/r/data_visualization/2018/04/15/sp_proj4string_spTransform.html>
 -->
 
+<!--
 ##### * 금정구 지도 데이터를 data.frame 자료형으로 변환하여, 원하는 형태로 병합한다.
 
 `gj` 변수는 현재 `shp` 파일로부터 읽어들인 자료로 `S4` 자료형인데 이를 다루기위해 `df`과 같은 자료형인 데이터프레임으로 변환한다.
@@ -311,6 +311,9 @@ gj_data <- fortify(gj)
 
 head(gj_data)
 ```
+-->
+
+---
 
 우리가 원하는 데이터 형태는 다음과 같습니다.
 
@@ -319,7 +322,7 @@ head(gj_data)
 | ... |...  | ...  |...  |... |
 | ... |...  | ...  |...  |... |
 
-열의 순서는 상관없지만 위와 같은 정보로 정리하기 위해서 다음 변수들을 고려합니다.
+열의 순서는 중요하지 않습니다. 위와 같은 정보로 정리하기 위해서 다음 변수들을 고려합니다.
 
 * `dj`는 지도자료로 모든 동 이름 정보를 모두 갖고 있습니다. `dong` 변수명으로 모든 동 이름을 저장합니다.
 
