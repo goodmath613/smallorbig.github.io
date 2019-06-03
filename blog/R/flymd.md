@@ -12,7 +12,7 @@ Updated : 2019. 06. 03.
 Windows 환경에서 R 버젼은 `3.6.0`, RStudio 버젼은 `1.1.463` 으로 잘 작동함을 확인했습니다. 아래 링크로 자료를 다운로드 한 뒤에 다음 단계를 따라합니다.
 
 - 다운로드 링크 : (약 53mb)
-
+fLyMd-mAkEr
 <https://drive.google.com/open?id=1phtmhPpK4VuBeDkITGwgIrCyzLPFNx7y>{: target="_blank" }
 
   1. 압축을 풀편 `0607_R` 폴더가 만들어집니다.
