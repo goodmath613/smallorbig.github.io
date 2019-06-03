@@ -360,7 +360,7 @@ head(gj_data)
   ```r
   # CODE-12
 	
-  dong <- data.frame(unique(dj$EMD_KOR_NM))
+  dong <- data.frame(unique(gj$EMD_KOR_NM))
 
   colnames(dong) <- c("address")
 

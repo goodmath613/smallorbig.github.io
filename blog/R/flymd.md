@@ -360,7 +360,7 @@ head(gj_data)
   ```r
   # CODE-12
 	
-  dong <- data.frame(unique(dj$EMD_KOR_NM))
+  dong <- data.frame(unique(gj$EMD_KOR_NM))
 
   colnames(dong) <- c("address")
 
@@ -418,7 +418,7 @@ head(gj_data)
 * 지도 이미지를 `gj_ck` 자료로 색칠하기
 
 ```r
-# CODE-17	fLyMd-mAkEr
+# CODE-17	
 
 ggplot(gj_ck,
      aes(x = long,
@@ -428,5 +428,5 @@ ggplot(gj_ck,
      coord_fixed() +
      scale_fill_gradient(low = 'white', high = 'blue')
 ```
-
+fLyMd-mAkEr
 끝.
