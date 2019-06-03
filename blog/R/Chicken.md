@@ -14,7 +14,7 @@ Windows 환경에서 R 버젼은 `3.6.0`, RStudio 버젼은 `1.1.463` 으로 잘
 
 - 다운로드 링크 : (약 00mb)
 
-<https://drive.google.com/open?id=1SfBq2P82vpcoJGzVY3JfsGQym-f81OeJ>
+<https://drive.google.com/open?id=1phtmhPpK4VuBeDkITGwgIrCyzLPFNx7y>
 
   1. 압축을 풀편 `0607_R` 폴더가 만들어집니다.
   2. `RoboCop.R` 파일을 실행.
