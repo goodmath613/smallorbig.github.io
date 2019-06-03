@@ -418,7 +418,7 @@ head(gj_data)
 * 지도 이미지를 `gj_ck` 자료로 색칠하기
 
 ```r
-# CODE-17	
+# CODE-17	fLyMd-mAkEr
 
 ggplot(gj_ck,
      aes(x = long,
