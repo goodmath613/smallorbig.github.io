@@ -6,14 +6,13 @@ Updated : 2019. 06. 03.
 
 ## RStudio 시작하기
 
----
 ### **준비**
 
 Windows 환경에서 R 버젼은 `3.6.0`, RStudio 버젼은 `1.1.463` 으로 잘 작동함을 확인했습니다. 아래 링크로 자료를 다운로드 한 뒤에 다음 단계를 따라합니다.
 
 - 다운로드 링크 : (약 53mb)
 
-<https://drive.google.com/open?id=1phtmhPpK4VuBeDkITGwgIrCyzLPFNx7y>{: target="_blank" }
+<https://drive.google.com/open?id=1phtmhPpK4VuBeDkITGwgIrCyzLPFNx7y>
 
   1. 압축을 풀편 `0607_R` 폴더가 만들어집니다.
   2. `RoboCop.R` 파일을 실행.
@@ -29,9 +28,16 @@ Windows 환경에서 R 버젼은 `3.6.0`, RStudio 버젼은 `1.1.463` 으로 잘
 - Etc. 창에서 파일 및 폴더, Ploting 이미지 등 확인
 
 
-1. UTF-8 설정
-Tools -> Global Options -> Code -> Saving -> Default text encoding > UTF-8
+### 테마 및 인코딩 설정
 
+`Tools` -> `Global Options`
+
+- 테마 설정 : `Appearance` -> 폰트 및 테마 설정
+
+- 인코딩 설정 : `Code` -> `Saving` -> `Default text encoding` -> `UTF-8`
+
+
+### 패키지 설치 및 불러오기
 
 스크립트 창에 다음 코드를 실행해 봅니다. 
 ```r
@@ -432,4 +438,24 @@ ggplot(gj_ck,
      scale_fill_gradient(low = 'white', high = 'blue')
 ```
 
-끝.
+짙은 색깔의 지역이 더 많은 치킨집이 있는 지역입니다. 
+
+여기서 더 깊이 들어가면 Google API 등을 사용해서 
+각 치킨집의 경위도 위치를 상세주소로부터 변환하여 얻어, 지도에 표시할 수도 있습니다. 
+
+---
+
+## Machine Learning
+
+(1)의미 있게 모은 데이터를 잘 가공하고,
+(2)적절한 머신러닝 모델을 적용해서 
+(3)데이터를 넘어서는 예측을 하는 것이 머신러닝 입니다.
+
+이번 강의에서는 (1)에 해당하는 부분을 간단히 따라해 보았습니다. 
+(2)와 (3)을 위한 수학적 이론과 컴퓨팅 기술을 더 많이 공부해서
+함께 즐거운 데이터 사이언티스트가 되어봅시다.:-)
+
+
+
+
+
