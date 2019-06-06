@@ -63,6 +63,7 @@ Windows 환경에서 R 버젼은 `3.6.0`, RStudio 버젼은 `1.1.463` 으로 잘
 #### 여러가지 기본 자료형
 
 ![data](Basic/data_str.png "data structures")
+
 출처 : https://steemit.com/kr/@hironlee/r-db
 
 자료형 확인 함수 : `class()`
