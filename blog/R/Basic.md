@@ -177,7 +177,7 @@ D2$V3
 
 ``` r
 colnames(D1)[colnames(D1) == "V1"] <- "new1"
-colnames(D1)[2] <- "new2
+colnames(D1)[2] <- "new2"
 ```
 
 - 데이터프레임 열 이름 여러개 변경
@@ -256,13 +256,15 @@ cbind(cz_1 ,cz_2)
 > Q. 다음 두 데이터프레임을 cbind로 합치면 어떤 결과가 나올까요?
 
 ``` r
-A <- data.frame(first = c(1,2))
-rownames(A) <- c("aa", "bb")
-B <- data.frame(second = c(3,4))
-rownames(B) <- c("cc", "dd")
+Robot <- data.frame(name=c("RoboCop", "Terminator"))
+rownames(Robot) <- c("1987", "1984")
 
-cbind(A, B)
-cbind(B, A)
+Gun <- data.frame(model=c("오토나인", "레버액션 샷건"))
+rownames(Gun) <- c("20발", "12발")
+
+cbind(Robot, Gun)
+
+cbind(Gun,   Robot)
 ```
 
 행 이름을 확인합니다.
