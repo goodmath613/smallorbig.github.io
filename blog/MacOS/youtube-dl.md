@@ -30,6 +30,9 @@
 	  ...
 
 여기서 `format code`를 선택해서 다운로드 하면 된다.
+
+	$ youtube-dl -f <format code> <URL>
+	
 영상마다 위 정보는 다르니 같은 `format code`가 항상 먹히지는 않으니 참고.
 
 ## 소리만 다운로드 ##
